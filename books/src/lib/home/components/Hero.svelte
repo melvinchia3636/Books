@@ -1,8 +1,22 @@
-<div class="mt-32 px-20 flex items-center justify-center gap-32" id="home">
-    <div class="text-center inline-flex flex-col gap-6 items-center w-min">
-        <h1 class="text-4xl whitespace-nowrap">We provide you the eBook<br/>Best Experience</h1>
-        <p class="text-base">Get One of Our eBook/PDFs Today<br><span class="text-muted">Rehoebooks 'Best Reader Experience anytime anywhere'</span></p>
-        <a href="subscribe.html" class="text-white bg-slate-700 px-8 py-4 rounded-md w-min whitespace-nowrap shadow-md">Subscribe Now</a>
+<script>
+    import Icon from "@iconify/svelte";
+    import Image from "../../../assets/illus1.svg";
+</script>
+
+<div class="mt-32 gap-12 flex items-center justify-center px-20 text-slate-700">
+    <div class="text-center w-7/12">
+        <p class="font-medium text-5xl mb-4 leading-tight">
+            Buy And Sell your E-books for the best price
+        </p>
+        <p class="text-lg">
+            Upload, Buy and Sell Your E-Book And Make Money on this website
+        </p>
+        <form action="" method="get" class="inline-flex items-center gap-2 p-1 mt-8 rounded-full border border-slate-300">
+            <Icon icon="uil:search" width="48" height="48" class="ml-4 text-slate-300" />
+            <input type="search" class="rounded-full py-4 w-full focus:outline-none placeholder-slate-400"
+                placeholder="Search E-book" id="mysearchbar">
+            <button class="py-4 px-12 rounded-full text-white bg-green-500">Search</button>
+        </form>
     </div>
-    <img src="https://cdn.pixabay.com/photo/2016/09/13/08/44/library-1666702_1280.jpg" alt="" class="object-cover h-96 w-full rounded-xl" width="500" height="800">
-</div>
+    <img src={Image} alt="" class="img-fluid" width="600" height="300">
+ </div>
